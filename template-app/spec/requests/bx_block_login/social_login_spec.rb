@@ -21,7 +21,7 @@ RSpec.describe BxBlockLogin::SocialLoginController, type: :request do
       "data": {
           "type": "facebook",
           "attributes":{
-              "access_token": "EAAMotySj39oBAJt7QXb5xbVXtHV8RvZBYZAgHxlFv2jpTXC4V4H4AEpZAlY6xZCQcwiQZC0MQaj6GtZAwd7XiUZB44cpNgy5ToXl3ixusMZCcROxNOAuBrZBtZBgvjhPzE5tyuBdo0VV8G8F1sAAByS6PlfH1dJ0SB8H0SWwkRSeSGyQuZA9Ja1S599"
+              "access_token": ""
           }
   
       }
@@ -33,7 +33,7 @@ RSpec.describe BxBlockLogin::SocialLoginController, type: :request do
 #     "data": {
 #         "type": "instagram",
 #         "attributes":{
-#             "access_token": "IGQVJYWXJQMzRNRS1qdXhXZAC0yWGZAzbGhOaWZA1dVlEQzJkTFNmbkpzRERfNkpfbWtobk0yNHVCWlUwTnFfOFM1VFhxTVIyVmlCMWhhUkdVZATh1UU5raDA4Rnk3dERINFNJOWNESlB1U0t4UnpRcXpZAbgZDZD"
+#             "access_token": ""
 #         }
 
 #     }
