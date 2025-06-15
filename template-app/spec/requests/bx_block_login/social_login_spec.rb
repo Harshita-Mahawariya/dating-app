@@ -9,7 +9,7 @@ RSpec.describe BxBlockLogin::SocialLoginController, type: :request do
         "data": {
             "type": "google",
             "attributes":{
-                "access_token": "ya29.a0AVvZVsqpSSohJ5-b2TgF8Ny6wDvyFd9j-nFP3WWEksA6LKHVdCWUkC4MCTzRUy91h8l3wR4w46VYl09YRppg87QYdnyR7avf-q2-D0J3cAoaG4bpiyEXWsKRJz1oDMVUiLJVxfr_e0XWMhdnyYUBaQ1vgZfUaCgYKAaYSARASFQGbdwaI7Bou5blTkE3IQlppJpwCzA0163"
+                "access_token": ""
             }
     
         }
