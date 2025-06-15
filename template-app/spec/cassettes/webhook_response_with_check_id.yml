@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - onfido-ruby/2.0.2
       Authorization:
-      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      - Token token=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
@@ -85,7 +85,7 @@ http_interactions:
       User-Agent:
       - onfido-ruby/2.0.2
       Authorization:
-      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      - Token token=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
