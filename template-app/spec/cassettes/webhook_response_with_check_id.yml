@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.eu.onfido.com/v3.1/checks/2533949e-0519-4799-8887-2a3cd22421bd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '598'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:29:28 GMT
+      X-Amzn-Requestid:
+      - 1c4a6ce0-0dcd-4a8d-b393-c879ee1b02d6
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.086046'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 8c300dc1f6f74b021a4977543a972e06
+      Set-Cookie:
+      - _mkra_stck=3f746cebe614762d3df2af455d11c61e%3A1677324573.5831635; path=/;
+        max-age=10; expires=Sat, 25 Feb 2023 11:29:38 -0000; HttpOnly
+      X-Amz-Apigw-Id:
+      - A5Kb3Fy3joEFWlQ=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"8d6f61675ca6317cbb9b171efb73ea52"
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f118-26f02b0826f46c4e64a87562
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:29:28 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a6750ab07a2ce824730dbc0afe6e5aba.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - KKzD17N-R6-60E0F5tLta4xuPFNXYqdRMQVqA68L-0vAe8XyYqhgpA==
+    body:
+      encoding: UTF-8
+      string: '{"id":"2533949e-0519-4799-8887-2a3cd22421bd","created_at":"2023-02-25T05:36:53Z","status":"complete","redirect_uri":null,"result":"clear","sandbox":true,"tags":[],"results_uri":"https://dashboard.onfido.com/checks/2533949e-0519-4799-8887-2a3cd22421bd","form_uri":null,"paused":false,"version":"3.6","report_ids":["9ea9e7cc-d28a-47c0-9eab-cfe5f1860bb0","21d951ae-1fa6-42a2-9604-07c3e10f0683"],"href":"/v3.1/checks/2533949e-0519-4799-8887-2a3cd22421bd","applicant_id":"f1affaa2-61e4-4be7-bc1f-da0487f67876","applicant_provides_data":false,"webhook_ids":null,"privacy_notices_read_consent_given":null}'
+  recorded_at: Sat, 25 Feb 2023 11:29:28 GMT
+- request:
+    method: get
+    uri: https://api.eu.onfido.com/v3.1/checks/2533949e-0519-4799-8887-2a3cd22421bd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '598'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:29:29 GMT
+      X-Amzn-Requestid:
+      - 7480817b-40cd-420d-8fc4-9c11af2be997
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.101290'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 360a4dd5fa833df15f86d3d1f167fc30
+      Set-Cookie:
+      - _mkra_stck=3f746cebe614762d3df2af455d11c61e%3A1677324574.075265; path=/; max-age=10;
+        expires=Sat, 25 Feb 2023 11:29:39 -0000; HttpOnly
+      X-Amz-Apigw-Id:
+      - A5Kb8HLNjoEFoKA=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"8d6f61675ca6317cbb9b171efb73ea52"
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f118-7b31267e714446783602c7a2
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:29:29 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9a8606317a48095d2e10f478d30b0550.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - yBzF91_bGNlRd7OMRYyXOprsN51DVwKNGY6aHeE2mYfL1C8wAY3wgA==
+    body:
+      encoding: UTF-8
+      string: '{"id":"2533949e-0519-4799-8887-2a3cd22421bd","created_at":"2023-02-25T05:36:53Z","status":"complete","redirect_uri":null,"result":"clear","sandbox":true,"tags":[],"results_uri":"https://dashboard.onfido.com/checks/2533949e-0519-4799-8887-2a3cd22421bd","form_uri":null,"paused":false,"version":"3.6","report_ids":["9ea9e7cc-d28a-47c0-9eab-cfe5f1860bb0","21d951ae-1fa6-42a2-9604-07c3e10f0683"],"href":"/v3.1/checks/2533949e-0519-4799-8887-2a3cd22421bd","applicant_id":"f1affaa2-61e4-4be7-bc1f-da0487f67876","applicant_provides_data":false,"webhook_ids":null,"privacy_notices_read_consent_given":null}'
+  recorded_at: Sat, 25 Feb 2023 11:29:29 GMT
+recorded_with: VCR 6.1.0

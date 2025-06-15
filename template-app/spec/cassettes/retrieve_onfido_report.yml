@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.eu.onfido.com/v3.1/checks?applicant_id=f1affaa2-61e4-4be7-bc1f-da0487f67876
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '611'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:34:50 GMT
+      X-Amzn-Requestid:
+      - bf2a9c1b-f972-483e-b0fe-723e8770afc1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.092466'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 1b5ab844ba2fdda056d2b4efc65f51d4
+      X-Amz-Apigw-Id:
+      - A5LOGE3djoEFbXw=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"df2f630dee58e5e2884fbe2f47013dbe"
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f259-663ae21b3ab321a67aad9932
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:34:50 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 8f71ac4457af7ba35e6da4edd1d079ba.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - SH4cYLrBEdOcT50jFB1813XYZpmg7_wHZ2Y0CjkXLrF-MYzgR9L1bA==
+    body:
+      encoding: UTF-8
+      string: '{"checks":[{"id":"2533949e-0519-4799-8887-2a3cd22421bd","created_at":"2023-02-25T05:36:53Z","status":"complete","redirect_uri":null,"result":"clear","sandbox":true,"tags":[],"results_uri":"https://dashboard.onfido.com/checks/2533949e-0519-4799-8887-2a3cd22421bd","form_uri":null,"paused":false,"version":"3.6","report_ids":["9ea9e7cc-d28a-47c0-9eab-cfe5f1860bb0","21d951ae-1fa6-42a2-9604-07c3e10f0683"],"href":"/v3.1/checks/2533949e-0519-4799-8887-2a3cd22421bd","applicant_id":"f1affaa2-61e4-4be7-bc1f-da0487f67876","applicant_provides_data":false,"webhook_ids":null,"privacy_notices_read_consent_given":null}]}'
+  recorded_at: Sat, 25 Feb 2023 11:34:50 GMT
+- request:
+    method: get
+    uri: https://api.eu.onfido.com/v3.1/reports?check_id=2533949e-0519-4799-8887-2a3cd22421bd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3692'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:34:50 GMT
+      X-Amzn-Requestid:
+      - f901537a-5e16-42a2-ad24-c1af1142b9da
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.174473'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 826286776906c04706f56b592450fb38
+      X-Amz-Apigw-Id:
+      - A5LOMFt_joEFa-Q=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"758bd78ffdacf4905501ada4715a58a2"
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f25a-2d18d3c07625a3723657e386
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:34:50 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 dc246a68a56a920a99de16120783d902.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - _TG2vGkqMvT-HeBckh-FS1CpbzoiivGrbI5HZb8-3brezO3xlUwBjg==
+    body:
+      encoding: UTF-8
+      string: '{"reports":[{"check_id":"2533949e-0519-4799-8887-2a3cd22421bd","created_at":"2023-02-25T05:36:53Z","documents":[],"href":"/v3.1/reports/9ea9e7cc-d28a-47c0-9eab-cfe5f1860bb0","id":"9ea9e7cc-d28a-47c0-9eab-cfe5f1860bb0","name":"facial_similarity_photo","properties":{},"result":"clear","status":"complete","sub_result":null,"breakdown":{"visual_authenticity":{"result":"clear","breakdown":{"spoofing_detection":{"result":"clear","properties":{"score":0.9512}}}},"image_integrity":{"result":"clear","breakdown":{"source_integrity":{"result":"clear","properties":{}},"face_detected":{"result":"clear","properties":{}}}},"face_comparison":{"result":"clear","breakdown":{"face_match":{"result":"clear","properties":{"score":0.6512,"document_uuid":"e10560c2-9995-47e1-a0ab-d99cc4c0dc95"}}}}}},{"check_id":"2533949e-0519-4799-8887-2a3cd22421bd","created_at":"2023-02-25T05:36:53Z","documents":[{"id":"e10560c2-9995-47e1-a0ab-d99cc4c0dc95"}],"href":"/v3.1/reports/21d951ae-1fa6-42a2-9604-07c3e10f0683","id":"21d951ae-1fa6-42a2-9604-07c3e10f0683","name":"document","properties":{"date_of_birth":"1990-01-01","date_of_expiry":"2031-05-28","document_numbers":[{"type":"document_number","value":"999999999"}],"document_type":"passport","first_name":"kapi","gender":null,"issuing_country":"GBR","last_name":"Smit","nationality":null},"result":"clear","status":"complete","sub_result":"clear","breakdown":{"age_validation":{"result":"clear","breakdown":{"minimum_accepted_age":{"result":"clear","properties":{}}}},"police_record":{"result":"clear"},"image_integrity":{"result":"clear","breakdown":{"colour_picture":{"result":"clear","properties":{}},"supported_document":{"result":"clear","properties":{}},"conclusive_document_quality":{"result":"clear","properties":{}},"image_quality":{"result":"clear","properties":{}}}},"data_comparison":{"result":"clear","breakdown":{"date_of_birth":{"result":"clear","properties":{}},"first_name":{"result":"clear","properties":{}},"document_numbers":{"result":"clear","properties":{}},"document_type":{"result":"clear","properties":{}},"last_name":{"result":"clear","properties":{}},"date_of_expiry":{"result":"clear","properties":{}},"gender":{"result":"clear","properties":{}},"issuing_country":{"result":"clear","properties":{}}}},"data_consistency":{"result":"clear","breakdown":{"nationality":{"result":"clear","properties":{}},"last_name":{"result":"clear","properties":{}},"first_name":{"result":"clear","properties":{}},"multiple_data_sources_present":{"result":"clear","properties":{}},"gender":{"result":"clear","properties":{}},"date_of_birth":{"result":"clear","properties":{}},"document_type":{"result":"clear","properties":{}},"issuing_country":{"result":"clear","properties":{}},"document_numbers":{"result":"clear","properties":{}},"date_of_expiry":{"result":"clear","properties":{}}}},"compromised_document":{"result":"clear"},"visual_authenticity":{"result":"clear","breakdown":{"face_detection":{"result":"clear","properties":{}},"other":{"result":"clear","properties":{}},"digital_tampering":{"result":"clear","properties":{}},"original_document_present":{"result":"clear","properties":{}},"security_features":{"result":"clear","properties":{}},"template":{"result":"clear","properties":{}},"picture_face_integrity":{"result":"clear","properties":{}},"fonts":{"result":"clear","properties":{}}}},"data_validation":{"result":"clear","breakdown":{"mrz":{"result":"clear","properties":{}},"expiry_date":{"result":"clear","properties":{}},"document_expiration":{"result":"clear","properties":{}},"document_numbers":{"result":"clear","properties":{}},"date_of_birth":{"result":"clear","properties":{}},"gender":{"result":"clear","properties":{}}}}}}]}'
+  recorded_at: Sat, 25 Feb 2023 11:34:50 GMT
+recorded_with: VCR 6.1.0

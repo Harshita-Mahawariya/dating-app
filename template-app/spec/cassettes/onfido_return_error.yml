@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.eu.onfido.com/v3.1/applicants
+    body:
+      encoding: UTF-8
+      string: first_name=Jane&last_name=Doe&middle_name=Smith&email=abc&dob=1990-01-31&phone_number=9121212323&location[country_of_residence]=GBR&consents[][name]=privacy_notices_read&consents[][granted]=true
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Content-Length:
+      - '194'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 422
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '128'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:26:39 GMT
+      X-Amzn-Requestid:
+      - 0b0cff41-b53b-4ade-8067-d6722b41fd83
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.046073'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - cb906356434605f66bf5e21bd944e6fe
+      X-Amz-Apigw-Id:
+      - A5KBgGk7joEFsEA=
+      X-Content-Type-Options:
+      - nosniff
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f06f-70339fd4782eff8d357ea150
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:26:39 GMT
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 9f4cce6859e22bfe7ef1809523b01cb6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - zFfMaC2nxFphOQW_yUz-Jj5NkKGoHMAUPCxEYUgfwsaiNTtGv55HrA==
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"validation_error","message":"There was a validation
+        error on this request","fields":{"email":["is invalid"]}}}'
+  recorded_at: Sat, 25 Feb 2023 11:26:39 GMT
+recorded_with: VCR 6.1.0

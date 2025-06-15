@@ -1,0 +1,106 @@
+source 'https://rubygems.org'
+source 'https://gem.fury.io/engineerai'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '2.6.5'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Use postgresql as the database for Active Record
+gem 'pg', '>= 0.18', '< 2.0'
+# Use Puma as the app server
+gem 'puma', '~> 4.1'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# gem 'jbuilder', '~> 2.7'
+# Use Active Model has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use Active Storage variant
+# gem 'image_processing', '~> 1.2'
+gem 'omniauth'
+gem 'dotenv-rails'
+gem 'omniauth-google-oauth2'
+
+gem 'httparty'
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'bx_block_stripe_integration', '0.1.10'
+gem 'bx_block_photo_library-6419d914', '0.0.2', require: 'bx_block_photo_library'
+gem 'bx_block_login-3d0582b5', '0.0.10', require: 'bx_block_login'
+gem 'account_block', '0.0.34'
+gem 'bx_block_sms', '0.0.5'
+gem 'bx_block_privacy_settings', '0.0.4'
+gem 'bx_block_forgot_password-4de8968b', '0.0.6', require: 'bx_block_forgot_password'
+gem 'bx_block_push_notifications-c0f9e9b7', '0.0.10', require: 'bx_block_push_notifications'
+gem 'bx_block_categories-acd0763f', '0.0.9', require: 'bx_block_categories'
+gem 'bx_block_admin', '0.0.15'
+gem 'bx_block_upload_media-9de56634', '0.0.2', require: 'bx_block_upload_media'
+gem 'bx_block_custom_ads-e8d68990', '0.0.2', require: 'bx_block_custom_ads'
+gem 'bx_block_custom_form-63cd533b', '0.0.7', require: 'bx_block_custom_form'
+gem 'bx_block_video_library', '0.0.3'
+gem 'bx_block_location-99004202', '0.0.4', require: 'bx_block_location'
+gem 'bx_block_address-07f1bf4f', '0.0.8', require: 'bx_block_address'
+gem 'bx_block_appointment_management-eb816fd3', '0.0.7', require: 'bx_block_appointment_management'
+gem 'bx_block_roles_permissions-c50949d0', '0.0.6', require: 'bx_block_roles_permissions'
+gem 'bx_block_block_users-eefa7b2b', '0.0.3', require: 'bx_block_block_users'
+gem 'bx_block_favourites', '0.0.4'
+gem 'bx_block_like', '0.0.5'
+gem 'bx_block_posts-3dc5b993', '0.0.14', require: 'bx_block_posts'
+gem 'bx_block_profile', '0.0.8'
+gem 'bx_block_bulk_uploading', '0.0.14', require: 'bx_block_bulk_uploading'
+gem 'bx_block_chat', '0.0.18'
+gem 'bx_block_filter_items-b1be1f37', '0.0.2', require: 'bx_block_filter_items'
+gem 'bx_block_catalogue-0e5da613', '0.0.11', require: 'bx_block_catalogue'
+gem 'bx_block_email_notifications', '0.0.3'
+gem 'bx_block_order_management-674a3e38', '0.0.23', require: 'bx_block_order_management'
+gem 'bx_block_coupon_cg-1da92412', '0.0.1', require: 'bx_block_coupon_cg'
+gem 'bx_block_fedex_integration-c7604a00', '0.0.4', require: 'bx_block_fedex_integration'
+gem 'bx_block_content_management', '0.0.3', require: 'bx_block_content_management'
+gem 'bx_block_language_options', '0.0.5'
+gem 'bx_block_navmenu-1cdc25a4', '0.0.3', require: 'bx_block_navmenu'
+gem 'bx_block_contact_us-6e0a750f', '0.0.3', require: 'bx_block_contact_us'
+gem 'bx_block_link_share', '0.1.8'
+gem 'bx_block_promo_codes', '0.0.3', require: 'bx_block_promo_codes'
+gem 'bx_block_paypal-0541df80', '0.0.5', require: 'bx_block_paypal'
+gem 'builder_base', '0.0.53'
+group :development, :test do
+  gem 'rspec-sonarqube-formatter', '1.5.0'
+  gem 'rspec-rails', '5.1.2'
+  gem 'simplecov', '0.17.0'
+  gem 'factory_bot_rails'
+  gem 'database_cleaner-active_record'
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'shoulda-callback-matchers', '~> 1.1.1'
+  gem 'vcr'
+  gem 'webmock'
+end
+
+group :test do
+  gem 'mock_redis', '0.34.0'
+end
+
+gem 'sidekiq_alive'
+gem 'sidekiq', '~> 6.1.0'
+
+gem "yabeda-prometheus"    # Base
+gem "yabeda-rails"         #API endpoint monitoring
+gem "yabeda-http_requests" #External request monitoring
+gem "yabeda-puma-plugin"
+gem 'yabeda-sidekiq'
+
+gem 'bx_block_cors'
+gem 'devise'
+gem 'sassc-rails'
+gem 'activeadmin'
+gem 'active_admin_role'
+gem 'activeadmin_json_editor'
+gem 'active_admin_datetimepicker'
+gem 'rack-cors'
+gem 'onfido', '~> 2.0.1' #Document Verification

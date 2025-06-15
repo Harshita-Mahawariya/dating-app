@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.eu.onfido.com/v3.1/applicants
+    body:
+      encoding: UTF-8
+      string: first_name=Jane&last_name=Doe&middle_name=Smith&email=test%40example.com&dob=1990-01-31&phone_number=9121212323&location[country_of_residence]=GBR&consents[][name]=privacy_notices_read&consents[][granted]=true
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '291'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:26:39 GMT
+      X-Amzn-Requestid:
+      - bb919765-6cd1-4b5e-9def-ce6073b5adf7
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.091172'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 10691422aee55d9ec4f4f39230f99359
+      Set-Cookie:
+      - _mkra_stck=3f746cebe614762d3df2af455d11c61e%3A1677324404.3035948; path=/;
+        max-age=10; expires=Sat, 25 Feb 2023 11:26:49 -0000; HttpOnly
+      X-Amz-Apigw-Id:
+      - A5KBaE6pDoEFXvw=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"f465bcb13df3e3b95413e7104adf9146"
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f06f-11f7115b213c2fad0e85e1ff
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:26:39 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 36857174980d52821c52b73b8b577810.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - FbPopiH1-cTaBGSmLIfKX8BXa2UeRXHSt-mvHKdnMGrWrOLIegEx2w==
+    body:
+      encoding: UTF-8
+      string: '{"id":"ba5fe93a-22ac-4b8f-9824-f08030c81364","created_at":"2023-02-25T11:26:39Z","sandbox":true,"first_name":"Jane","last_name":"Doe","email":"test@example.com","dob":"1990-01-31","delete_at":null,"href":"/v3.1/applicants/ba5fe93a-22ac-4b8f-9824-f08030c81364","address":null,"id_numbers":[]}'
+  recorded_at: Sat, 25 Feb 2023 11:26:39 GMT
+recorded_with: VCR 6.1.0

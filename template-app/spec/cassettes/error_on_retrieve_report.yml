@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.eu.onfido.com/v3.1/checks?applicant_id=71014405-9df6-4a6e-a14b-f0066235f010
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - onfido-ruby/2.0.2
+      Authorization:
+      - Token token=api_sandbox.VfzFDCaYox9.rTHqR4jClR6-IHzdAQQUML5bd7PlNZ_Q
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.eu.onfido.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 11:36:59 GMT
+      X-Amzn-Requestid:
+      - 3a6cd348-4876-4cd1-910d-fe50f1860d61
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime:
+      - '0.015589'
+      X-Runtime-R:
+      - '4'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - cc343aa69da682eff45158697a815a7d
+      X-Amz-Apigw-Id:
+      - A5LiYEaejoEFTEQ=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"7ebd655bb72365705f30dc67eb8b7b8f"
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f2db-50124f617eb993c35e9f8bb0
+      X-Amzn-Remapped-Date:
+      - Sat, 25 Feb 2023 11:36:59 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e6c21e4c77160b8b93e0e6eca2e1e240.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - Mf1SthioqO6dQMwwoEz9IeewKFkyLMDMhxSNYKwK1IcilrJYdMk67w==
+    body:
+      encoding: UTF-8
+      string: '{"checks":[]}'
+  recorded_at: Sat, 25 Feb 2023 11:36:59 GMT
+recorded_with: VCR 6.1.0
